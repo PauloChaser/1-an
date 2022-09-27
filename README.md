@@ -2,7 +2,7 @@
 
 
 
-![image](https://github.com/PauloChaser/zenit-shvabe/blob/master/1-an.gif)
+![image](https://github.com/PauloChaser/1-an/blob/master/1-an.gif)
 
 #### Используемые технологии:
 + HTML5/СSS3
