@@ -1,0 +1,69 @@
+.input {
+    width: 100%;
+    border: 1px solid rgba(var(--gray-light),0.4);
+    border-radius: 4px;
+    outline: none;
+    background: transparent;
+
+    padding: 20px 27px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+
+    transition: border 200ms ease;
+}
+
+.input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.input:focus {
+    border-color: #FFFFFF;
+}
+
+.input--error {
+    border-color: rgba(var(--red),1) !important;
+
+    transition: border 200ms ease;
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+@media screen and (max-width: 1280px) {
+    .input {
+        font-size: 14px;
+        padding: 20px 24px;
+    }
+
+    .input label {
+        font-size: 14px;
+    }
+
+    .input--account {
+        padding-top: 16px;
+        padding-bottom: 13px;
+        padding-right: 20px;
+        font-size: 12px;
+    }
+
+    .input--account::placeholder {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .input {
+        padding: 20px 17px;
+    }
+
+}

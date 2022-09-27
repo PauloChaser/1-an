@@ -1,0 +1,143 @@
+.advantages {
+    margin-bottom: 108px;
+    width: 100%;
+}
+
+.advantages__items {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+
+}
+
+.advantages__item {
+    flex: 1 0 26%;
+    white-space: nowrap;
+    background: #FFFFFF;
+    box-shadow: 0 0 15px rgba(var(--gray-light), 0.15);
+    border-radius: 5px;
+    padding: 38px 35px;
+    max-width: 220px;
+    cursor: pointer;
+    margin-right: 30px;
+    transition: box-shadow 200ms ease;
+}
+
+.advantages__item:last-child {
+    margin-right: 0;
+}
+
+.advantages__item:hover {
+    box-shadow: 0 0 20px rgba(var(--gray-light), 0.4);
+}
+
+.advantages__itemContent {
+
+}
+
+.advantages__itemTitle {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 40px;
+    color: rgba(var(--black-light), 1);
+    padding: 0;
+    margin: 0 0 5px;
+}
+
+.advantages__itemSubtitle {
+    display: inline-block;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 34px;
+    color: rgba(var(--black-light), 1);
+}
+
+
+@media screen and (max-width: 1280px) {
+    .advantages {
+        margin-bottom: 96px;
+    }
+
+    .advantages__item {
+
+        margin-right: 21px;
+        max-width: 182px;
+        padding: 28px 24px 28px 25px;
+    }
+
+    .advantages__itemTitle {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .advantages__itemSubtitle {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .advantages__items {
+        flex-wrap: wrap;
+    }
+
+    .advantages__item {
+        margin-bottom: 22px;
+    }
+}
+
+@media screen and (max-width: 871px) {
+}
+
+@media screen and (max-width: 768px) {
+    .advantages {
+        margin-bottom: 76px;
+    }
+
+    .advantages__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 20px 20px;
+    }
+
+    .advantages__item {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 588px) {
+    .advantages {
+        margin-bottom: 76px;
+    }
+
+    .advantages__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 20px 20px;
+    }
+
+    .advantages__item {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .advantages {
+        margin-bottom: 76px;
+    }
+
+    .advantages__items {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+    }
+
+    .advantages__item {
+        margin: 0;
+    }
+}

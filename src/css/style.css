@@ -1,0 +1,50 @@
+@import "../../node_modules/normalize.css/normalize.css";
+@import "fonts.css";
+@import "vars.css";
+
+@import "blocks/container.css";
+@import "blocks/button.css";
+
+@import "blocks/title.css";
+@import "blocks/input.css";
+@import "blocks/select.css";
+@import "blocks/checkbox.css";
+@import "blocks/arrows.css";
+@import "blocks/form.css";
+@import "blocks/overlay.css";
+@import "blocks/textarea.css";
+
+
+@import "sections/header.css";
+@import "sections/mainBanner.css";
+@import "sections/slider.css";
+@import "sections/info.css";
+@import "sections/map.css";
+@import "sections/advantages.css";
+@import "sections/footer.css";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #202020;
+    font-family: 'Formular', sans-serif;
+    box-sizing: border-box;
+
+    background-color: #ffffff;
+    line-height: 1;
+    --swiper-theme-color: #FF2D23;
+    --swiper-pagination-bullet-inactive-color: rgba(var(--gray-light),1);
+    --swiper-pagination-bullet-size:7px;
+    --swiper-pagination-bullet-horizontal-gap: 9px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+input {
+    outline: none;
+}

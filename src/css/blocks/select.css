@@ -1,0 +1,100 @@
+.select {
+    position: relative;
+    width: 100%;
+}
+
+.select--hidden {
+    display: none;
+}
+
+.select__value {
+    padding: 20px 27px;
+    border: 1px solid rgba(var(--gray-light), 0.4);
+    border-radius: 4px;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNiIgdmlld0JveD0iMCAwIDEwIDYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0wLjc4OTcwMyAwLjc1ODc4OUw0Ljc4OTcgNC43NTg3OUw4Ljc4OTcgMC43NTg3ODkiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4K");
+    background-repeat: no-repeat;
+    background-size: 11px;
+    background-position: 94% 53%;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+
+    transition: border 200ms ease;
+}
+
+.select__options {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    z-index: 1;
+    background-color: rgba(var(--black-dark), 1);
+    cursor: pointer;
+
+    border: 1px solid rgba(var(--gray-light), 0.4);
+    border-top: 0;
+    border-radius: 0 0 4px 4px;
+
+    opacity: 0;
+    box-sizing: border-box;
+    transition: opacity 200ms ease, border-color 200ms ease;
+}
+
+.select__option {
+    padding: 10px 15px;
+    margin-left: 12px;
+    margin-right: 12px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.select__option:first-child {
+    margin-top: 10px;
+}
+
+.select__option:last-child {
+    border-bottom: none;
+    margin-bottom: 10px;
+}
+
+.select__option:hover {
+    background: rgba(var(--gray-light), 0.1);
+    /*opacity: 0.1;*/
+    border-radius: 3px;
+}
+
+.select--active .select__value {
+    border-radius: 4px 4px 0 0;
+    border-color: #FFFFFF;
+}
+
+.select--active .select__options {
+    display: block;
+    border-color: #FFFFFF;
+
+    opacity: 1;
+}
+
+@media screen and (max-width: 1280px) {
+    .select__value {
+        padding: 20px 24px;
+        background-position: 93% 53%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .select__value {
+        padding: 20px 17px;
+        background-position: 95% 53%;
+    }
+}
